@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Towards Robust and Expressive Whole-body Human Pose and Shape Estimation">
+  <meta name="keywords" content="RoboSMPLX, Expressive Human Pose and Shape Estimation, Motion Capture, Animation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RoboSMPLX</title>
+
+  <style>
+  .hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
+  </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- custom css file  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/twentytwenty.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="icon" href="./assets/pac_man.svg">
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop head">
+      <div class="columns is-centered">
+        <div class="column has-text-centered head">
+<!--          <div class="logo">-->
+<!--          <a href="index.html">-->
+<!--            &lt;!&ndash; <img src="./assets/images/propainter_logo1" width=200px alt="Logo"> &ndash;&gt;-->
+<!--            <img src="./assets/images/propainter_logo1" onmouseover="this.src='./assets/images/propainter_logo2';" onmouseout="this.src='./assets/images/propainter_logo1';">-->
+<!--          </a>-->
+<!--          </div>-->
+          <br>
+
+          <h1 class="title is-2 publication-title">
+            Towards Robust and Expressive Whole-body Human Pose and Shape Estimation
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://pangyyyyy.github.io" target="_blank">Hui En Pang</a><sup>1</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://caizhongang.github.io/" target="_blank">Zhongang Cai</a><sup>1,2,3</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://yanglei.me/" target="_blank">Lei Yang</a><sup>2,3</sup>,&nbsp;
+            </span>
+
+            <br>
+            <span class="author-block">
+              <a href="https://scholar.google.com.sg/citations?user=fMXnSGMAAAAJ&hl=en" target="_blank">Qingyi Tao</a><sup>2</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://wu-zhonghua.github.io" target="_blank">Zhonghua Wu</a><sup>2</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://personal.ntu.edu.sg/tianwei.zhang/" target="_blank">Tianwei Zhang</a><sup>1</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a><sup>1</sup>&nbsp;
+            </span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>S-Lab, Nanyang Technological University</span>,
+            <span class="author-block"><sup>2</sup>SenseTime Research</span>,
+            <span class="author-block"><sup>3</sup>Shanghai AI Laboratory</span>
+          </div>
+
+          <!-- <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>equal contributions</span>,
+            <span class="author-block"><sup>✉</sup>corresponding author</span>
+          </div> -->
+
+          <br>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">NeurIPS 2023</span>
+          </div>
+
+          <br>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.08730" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openreview.net/pdf?id=XfKnoW4Zef" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/DepTqbPpVzY" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/robosmplx/robosmplx" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <!-- Demo Link. -->
+              <!-- <span class="link-block">
+                <a href="" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span>🤗&nbsp;Demo(Coming Soon)</span>
+                </a>
+              </span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Abstract. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Whole-body pose and shape estimation aims to jointly predict different 
+            behaviors (e.g., pose, hand gesture, facial expression) of the entire human 
+            body from a monocular image. Existing methods often exhibit degraded performance 
+            under the complexity of in-the-wild scenarios. We argue that the accuracy and 
+            reliability of these models are significantly affected by the quality of the 
+            predicted bounding box, e.g., the scale and alignment of body parts. The natural 
+            discrepancy between the ideal bounding box annotations and model detection results 
+            is particularly detrimental to the performance of whole-body pose and shape estimation. 
+            In this paper, we propose a novel framework RoboSMPLX to enhance the robustness of 
+            whole-body pose and shape estimation. RoboSMPLX incorporates three new modules to 
+            address the above challenges from three perspectives: 1) Localization Module enhances 
+            the model’s awareness of the subject’s location and semantics within the image space. 
+            2) Contrastive Feature Extraction Module encourages the model to be invariant to 
+            robust augmentations by incorporating contrastive loss with dedicated positive samples. 
+            3) Pixel Alignment Module ensures the reprojected mesh from the predicted camera 
+            and body model parameters are accurate and pixel-aligned. We perform comprehensive 
+            experiments to demonstrate the effectiveness of RoboSMPLX on body, hands, face 
+            and whole-body benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video -->
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/DepTqbPpVzY?si=qSeQuX-bgm_rON7E"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Visualizations -->
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+    <div class="column is-full">
+        <h2 class="title is-3">Qualitative Results</h2>
+    </div>
+    </div>
+
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/01.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/01_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/02.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/02_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/03.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/03_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/04.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/04_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/05.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/05_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/06.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/06_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/07.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/07_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/08.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/08_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+                <div class="item">
+          <div class="twentytwenty-container" data-orientation="horizontal" ratio="0.5556">
+            <div class="desc">SMPL-X Overlay</div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/09.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="video">
+              <video muted autoplay="autoplay" loop="loop" width="100%">
+                <source src="./assets/videos_reduced/09_overlay.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+            <h2 class="title is-3">Qualitative Evaluation</h2>
+        </div>
+      </div>
+
+        <div class="column is-centered has-text-centered">
+          <img style="width: 80%;" src="./assets/robosmplx/hand.png">
+        </div>
+        <div class="column is-centered has-text-centered">
+        <img style="width: 80%;" src="./assets/robosmplx/face.png">
+        </div>
+        <div class="column is-centered has-text-centered">
+        <img style="width: 80%;" src="./assets/robosmplx/wholebody_transx.png">
+        </div>
+        <div class="column is-centered has-text-centered">
+        <img style="width: 80%;" src="./assets/robosmplx/wholebody_transy.png">
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+ <div class="container is-max-desktop content">
+   <h2 class="title">BibTeX</h2>
+   <pre><code>@inproceedings{
+    title={Towards Robust and Expressive Whole-body Human Pose and Shape Estimation},
+    author={Pang, Hui En and Cai, Zhongang and Yang, Lei and Qingyi, Tao and Zhonghua, Wu and Zhang, Tianwei and Liu, Ziwei},
+    booktitle={NeurIPS},
+    year={2023}
+  }</code></pre>
+ </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <div class="columns is-centered"><p>
+            This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">ProPainter</a>.
+          </p></div>
+        </div>
+      </div>
+    </div>
+
+<!--    =================Visitor==========================-->
+<!--    <div class="content has-text-centered" style="padding:0 0 0 0">-->
+<!--      <img src='https://api.infinitescript.com/badgen/count?name=sczhou/ProPainter&ltext=Visitors&color=3977dd' alt='visitors'>-->
+<!--    </div>-->
+
+  </div>
+</footer>
+
+  <!-- custom js file  -->
+  <script defer src="./assets/js/fontawesome.all.min.js"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/jquery.event.move.js"></script>
+  <script src="./assets/js/jquery.twentytwenty.js"></script>
+  <script>
+  $(function(){
+    $(".twentytwenty-container").twentytwenty();
+    // $(".twentytwenty-container", "#results-carousel").twentytwenty({default_offset_pct: 0.5, ratio: 0.5});
+  });
+  </script>
+</body>
+</html>
