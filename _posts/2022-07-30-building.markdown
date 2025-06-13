@@ -2,7 +2,7 @@
 layout: post
 title:  "3D building reconstruction from single street view images using deep learning"
 date:   2022-07-28 22:21:59 +00:00
-image: /images/3dgaussian.jpg
+image: # /images/3dgaussian.jpg
 categories: research
 author: "Hui En Pang"
 authors: "<strong>Hui En Pang</strong>, Filip Biljecki"
