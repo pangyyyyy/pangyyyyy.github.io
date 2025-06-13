@@ -2,7 +2,7 @@
 layout: post
 title:  "SMPLest-X: Ultimate Scaling for Expressive Human Pose and Shape Estimation"
 date:   2025-03-28 22:21:59 +00:00
-image: 
+image: \images\white.png
 categories: research
 author: "Wanqi Yin"
 authors: "Wanqi Yin, Zhongang Cai, Ruisi Wang, Ailing Zeng, Chen Wei, Qingping Sun, Haiyi Mei, Yanjun Wang, <strong>Hui En Pang</strong>, Mingyuan Zhang, Lei Zhang, Chen Change Loy, Atsushi Yamashita, Lei Yang, Ziwei Liu"
