@@ -2,7 +2,7 @@
 layout: post
 title:  "Disco4D: Disentangled 4D Human Generation and Animation from a Single Image"
 date:   2025-02-28 22:21:59 +00:00
-image: /images/2025_disco4d.png
+image: \images\2025_disco4d.png
 categories: research
 author: "Hui En Pang"
 authors: "<strong>Hui En Pang</strong>, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu"
