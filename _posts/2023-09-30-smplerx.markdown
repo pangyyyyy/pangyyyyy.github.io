@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "SMPLer-X: Scaling Up Expressive Human Pose and Shape Estimation"
+date:   2023-09-28 22:21:59 +00:00
+image: /images/3dgaussian.jpg
+categories: research
+author: "Zhongang Cai"
+authors: "Zhongang Cai*, Wanqi Yin*, Ailing Zeng, Chen Wei, Qingping Sun, Yanjun Wang, <strong>Hui En Pang</strong>, Haiyi Mei, Mingyuan Zhang, Lei Zhang, Chen Change Loy, Lei Yang, Ziwei Liu"
+venue: "NeurIPS (Datasets and Benchmarks Track), 2023"
+arxiv: https://arxiv.org/abs/2309.17448
+code: https://github.com/caizhongang/SMPLer-X
+website: https://caizhongang.github.io/projects/SMPLer-X/
+---
